@@ -15,23 +15,23 @@ public class ada_neopixel_init  extends TranslatorBlock {
 	//@Override
 		public String toCode() throws SocketNullException, SubroutineNotDeclaredException
 		{
-			String Pin ;
+			//String Pin ;
 			String NbLed;
-			String NEO_KHZ800;
-			String NEO_RGB;
+			//String NEO_KHZ800;
+			//String NEO_RGB;
+			//TranslatorBlock translatorBlock = this.getRequiredTranslatorBlockAtSocket(0);
+			//Pin = translatorBlock.toCode();
 			TranslatorBlock translatorBlock = this.getRequiredTranslatorBlockAtSocket(0);
-			Pin = translatorBlock.toCode();
-			translatorBlock = this.getRequiredTranslatorBlockAtSocket(1);
 			NbLed = translatorBlock.toCode();
-			translatorBlock = this.getRequiredTranslatorBlockAtSocket(2);
-			NEO_KHZ800 = translatorBlock.toCode();
-			translatorBlock = this.getRequiredTranslatorBlockAtSocket(3);
-			NEO_RGB = translatorBlock.toCode();
+			//translatorBlock = this.getRequiredTranslatorBlockAtSocket(2);
+			//NEO_KHZ800 = translatorBlock.toCode();
+			//translatorBlock = this.getRequiredTranslatorBlockAtSocket(3);
+			//NEO_RGB = translatorBlock.toCode();
 			
 			translator.addHeaderFile("Adafruit_NeoPixel.h");
-			translator.addDefinitionCommand("Adafruit_NeoPixel strip_pin"+Pin+" = Adafruit_NeoPixel("+NbLed+","+ Pin +", " +NEO_RGB+ " + "+NEO_KHZ800 +");");
-			translator.addSetupCommand("strip_pin"+Pin+".begin();\n" +
-			"strip_pin"+Pin+".show();");
+			translator.addDefinitionCommand("Adafruit_NeoPixel strip = Adafruit_NeoPixel("+NbLed+", 0, NEO_RGB + NEO_KHZ800);");
+			translator.addSetupCommand("strip.begin();\n" +
+			"strip.show();");
 			
 			
 			return "" ;	

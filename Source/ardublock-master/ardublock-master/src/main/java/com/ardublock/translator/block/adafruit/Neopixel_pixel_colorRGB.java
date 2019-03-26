@@ -15,24 +15,26 @@ public class Neopixel_pixel_colorRGB  extends TranslatorBlock {
 	//@Override
 		public String toCode() throws SocketNullException, SubroutineNotDeclaredException
 		{
-			String Pin ;
+			//String Pin ;
 			String Pixel_Nb;
 			String Red;
 			String Blue;
 			String Green;
+			//TranslatorBlock translatorBlock = this.getRequiredTranslatorBlockAtSocket(0);
+			//Pin = translatorBlock.toCode();
 			TranslatorBlock translatorBlock = this.getRequiredTranslatorBlockAtSocket(0);
-			Pin = translatorBlock.toCode();
-			translatorBlock = this.getRequiredTranslatorBlockAtSocket(1);
 			Pixel_Nb = translatorBlock.toCode();
-			translatorBlock = this.getRequiredTranslatorBlockAtSocket(2);
+			translatorBlock = this.getRequiredTranslatorBlockAtSocket(1);
 			Red = translatorBlock.toCode();
-			translatorBlock = this.getRequiredTranslatorBlockAtSocket(3);
+			translatorBlock = this.getRequiredTranslatorBlockAtSocket(2);
 			Green = translatorBlock.toCode();
-			translatorBlock = this.getRequiredTranslatorBlockAtSocket(4);
+			translatorBlock = this.getRequiredTranslatorBlockAtSocket(3);
 			Blue = translatorBlock.toCode();
 			
+		
 			
-			String ret = "strip_pin"+Pin+".setPixelColor("+Pixel_Nb+","+Red+" ,"+Green+" ,"+Blue+" );\n";
+			String ret = "strip.setPixelColor("+Pixel_Nb+","+Green+" ,"+Red+" ,"+Blue+" );\n"
+					+ "strip.show();\n";
 			
 			return codePrefix + ret + codeSuffix;
 				

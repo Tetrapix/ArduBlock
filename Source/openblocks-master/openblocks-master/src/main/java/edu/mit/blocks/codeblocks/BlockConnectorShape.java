@@ -31,25 +31,25 @@ import edu.mit.blocks.codeblocks.rendering.BlockShapeUtil;
 public class BlockConnectorShape {
 
     /** height of horizontal-plug/socket */
-    public static final float DATA_PLUG_HEIGHT = 24.0f;
+    public static final float DATA_PLUG_HEIGHT = 34.0f;//24
 
     /** Width of most plug shapes */
-    public static final float NORMAL_DATA_PLUG_WIDTH = 8.0f;
+    public static final float NORMAL_DATA_PLUG_WIDTH = 11.0f;//8
 
     /** Width of polymorphic plug shape */
-    public static final float POLYMORPHIC_DATA_PLUG_WIDTH = 8.0f;
+    public static final float POLYMORPHIC_DATA_PLUG_WIDTH = 11.0f;//8
 
     /** width of vertical control connection */
-    public static final float CONTROL_PLUG_WIDTH = 14.0f;
+    public static final float CONTROL_PLUG_WIDTH = 17.0f;//14
 
     /** height of vertical control connection */
-    public static final float CONTROL_PLUG_HEIGHT = 4.0f;
+    public static final float CONTROL_PLUG_HEIGHT = 7.0f;//4
 
     /** width of command input bar */
     public static final float COMMAND_INPUT_BAR_WIDTH = BlockShape.COMMAND_PORT_OFFSET + 2f;
 
     /** height of command input bar */
-    public static final float COMMAND_INPUT_BAR_HEIGHT = 5f;
+    public static final float COMMAND_INPUT_BAR_HEIGHT = 8f;//5
 
     /** default height of command input */
     public static final float DEFAULT_COMMAND_INPUT_HEIGHT = DATA_PLUG_HEIGHT;

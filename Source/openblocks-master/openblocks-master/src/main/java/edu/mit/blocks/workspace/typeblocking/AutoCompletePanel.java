@@ -45,7 +45,7 @@ public class AutoCompletePanel extends JPanel implements MouseListener, MouseMot
     private static final int MARGIN = 7;
     private static final Color BACKGROUND = new Color(230, 230, 150);
     /**Minimum width**/
-    private static final int MINIMUM_WIDTH = 105;
+    private static final int MINIMUM_WIDTH = 205;
     /**Minimum height**/
     private static final int MINIMUM_HEIGHT = 105;
     /**Minimum width**/
@@ -66,7 +66,7 @@ public class AutoCompletePanel extends JPanel implements MouseListener, MouseMot
     public AutoCompletePanel(Workspace workspace) {
         super(new BorderLayout());
         this.workspace = workspace;
-        font = new Font("Ariel", Font.BOLD, 12);
+        font = new Font("Ariel", Font.BOLD, 18);
 
         //set up editor (text field)
         editor = new JTextField();
