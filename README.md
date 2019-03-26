@@ -1,9 +1,10 @@
-ArduBlock
-=========
+ArduBlock for Tetrapix
+======================
 
-OLD ArduBlock Version for letsgoING Project - works only up to Arduino IDE 1.6.9. 
+With the new Chapter for Tetrapix in the GUI you have the basic blocks for our tetrapix workshop.
 
--- this version is no longer maintained --
+you can get more information on www.tetrapix.de
 
-For setting up Eclipse see:
-http://blog.ardublock.com/2012/06/11/setup-ardublock-development-in-eclipse/
+this version is forked from the OLD ArduBlock Version for letsgoING Project - works only up to Arduino IDE 1.6.9. 
+
+
