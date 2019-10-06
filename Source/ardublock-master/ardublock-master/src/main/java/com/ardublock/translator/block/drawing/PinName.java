@@ -26,7 +26,7 @@ public class PinName extends TranslatorBlock
 			pinMap.put("9", "9");
 			pinMap.put("10", "10");
 			pinMap.put("11", "11");
-			pinMap.put("A0", "A0");
+			pinMap.put("A0", "0");
 			pinMap.put("A1", "A1");
 			pinMap.put("A2", "A2");
 			pinMap.put("A3", "A3");

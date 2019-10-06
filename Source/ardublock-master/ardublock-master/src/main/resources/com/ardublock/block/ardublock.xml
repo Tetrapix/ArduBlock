@@ -11224,6 +11224,13 @@
 
 	<BlockDrawerSets>
 		<BlockDrawerSet name="factory" type="stack" location="southwest" window-per-drawer="no" drawer-draggable="no">
+			<BlockDrawer button-color="74 108 212" name="bd.neopix" type="factory">
+				<BlockGenusMember>ada_neopixel_init</BlockGenusMember>
+				<BlockGenusMember>ada_neopixel_pixel_colorGRB</BlockGenusMember>
+				<BlockGenusMember>repeat_times</BlockGenusMember>
+				<BlockGenusMember>repeat_control</BlockGenusMember>
+				<BlockGenusMember>delay</BlockGenusMember>
+			</BlockDrawer>
 			<BlockDrawer name="bd.control" type="factory" is-open="yes" button-color="255 255 0">
 				<BlockGenusMember>loop</BlockGenusMember>
 				<BlockGenusMember>program</BlockGenusMember>
@@ -11325,6 +11332,22 @@
 				<BlockGenusMember>variable_vector</BlockGenusMember>
 				<BlockGenusMember>setter_variable_vector</BlockGenusMember>
 			</BlockDrawer>
+			<BlockDrawer button-color="74 0 212" name="bd.bewater" type="factory">
+				<BlockGenusMember>serial_write</BlockGenusMember>
+				<BlockGenusMember>serial_print</BlockGenusMember>
+				<BlockGenusMember>message</BlockGenusMember>
+				<BlockGenusMember>glue_sn</BlockGenusMember>
+				<BlockGenusMember>glue_sb</BlockGenusMember>
+				<BlockGenusMember>glue_poly</BlockGenusMember>
+				<BlockGenusMember>df_dht11_humidity</BlockGenusMember>
+				<BlockGenusMember>pin-read-analog</BlockGenusMember>
+				<BlockGenusMember>pin-write-digital</BlockGenusMember>
+				<BlockGenusMember>if</BlockGenusMember>
+				<BlockGenusMember>delay</BlockGenusMember>
+				<BlockGenusMember>less</BlockGenusMember>
+				<BlockGenusMember>number</BlockGenusMember>
+				
+			</BlockDrawer>
 	<!--		
 	<BlockDrawer button-color="216 5 10" name="bd.tetratetris_cat" type="factory">
 				<BlockGenusMember>tetratetris_testblock</BlockGenusMember>
@@ -11369,16 +11392,7 @@
 				<BlockGenusMember>ifelse</BlockGenusMember>			
 				<BlockGenusMember>deleteDisplay</BlockGenusMember>
 			</BlockDrawer>
-	--> 
-<BlockDrawer button-color="74 108 212" name="bd.neopix" type="factory">
 			
-				<BlockGenusMember>ada_neopixel_init</BlockGenusMember>
-				<BlockGenusMember>ada_neopixel_pixel_colorGRB</BlockGenusMember>
-				<BlockGenusMember>repeat_times</BlockGenusMember>
-				<BlockGenusMember>repeat_control</BlockGenusMember>
-				<BlockGenusMember>delay</BlockGenusMember>
-			</BlockDrawer>
-			<!-- 			
 			<BlockDrawer button-color="74 108 212" name="bd.tetrapix_addon" type="factory">
 				<BlockGenusMember>seeed_loud_sensor</BlockGenusMember>	
 				<BlockGenusMember>if</BlockGenusMember>	
@@ -11397,8 +11411,7 @@
 			</BlockDrawer>		
 		
 -->
-	
-		</BlockDrawerSet>
+	</BlockDrawerSet>
 	</BlockDrawerSets>
 
 	<Pages drawer-with-page="yes">
