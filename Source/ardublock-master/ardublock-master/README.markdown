@@ -36,6 +36,7 @@ Authors
 ----
 * David Li taweili@gmail.com
 * HE Qichen heqichen@gmail.com
+* Bastian Brabec bastian@tetrapix.de (Tetrapix Fork)
 
 
 ToDo
@@ -46,6 +47,8 @@ License
 ----
 
 Copyright (C) 2011 David Li and He Qichen
+
+Copyright (C) 2019 Bastian Brabec (Tetrapix Fork)
 
 This file is part of ArduBlock.
 
